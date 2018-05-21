@@ -5,14 +5,16 @@ function init() {
   // debugger
   let index = 0;
   document.body.addEventListener('keydown',function(e){
+    const user_input = []
     const key = parseInt(e.detail || e.which)
     if (index === code.length){
       window.alert("Sorry")
     }
     if (key === code[index]){
+      user_input.push(key)
       index++
     }
-    
+
 
   })
   // return window.alert("hey")
